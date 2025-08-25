@@ -1,0 +1,61 @@
+.places-list-container {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.places-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.places-header h1 {
+  margin: 0;
+  color: #262626;
+}
+
+.places-grid {
+  margin-top: 16px;
+}
+
+.place-card {
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.place-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.place-description {
+  margin-top: 8px;
+  color: #8c8c8c;
+}
+
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.error-alert {
+  margin: 24px;
+}
+
+@media (max-width: 768px) {
+  .places-list-container {
+    padding: 16px;
+  }
+  
+  .places-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
